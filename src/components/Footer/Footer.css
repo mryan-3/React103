@@ -1,0 +1,9 @@
+.footer{
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent background color */
+  border-radius: 20px;
+  backdrop-filter: blur(
+    2px
+  ); /* Apply a blur effect to create the glassmorphism */
+  border: 1px solid rgba(160, 57, 57, 0.75);
+}
+}

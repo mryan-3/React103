@@ -1,0 +1,142 @@
+.nav-container {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  background: #030303fd;
+  opacity: 1;
+  margin: 0%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  justify-content: space-between;
+  z-index: 99;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  margin-left: 20px;
+  height: 60px;
+  border-radius: 16px;
+}
+.nav-right {
+  margin-right: 40px;
+}
+.search-box {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+.input-search {
+  height: 26px;
+  width: 150px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+  background-color: #030303fd;
+  padding-right: 40px;
+  color: #fff;
+}
+.input-search::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+.btn-search {
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color: #ffffff;
+  background-color: transparent;
+  pointer-events: painted;
+}
+
+.search-box:hover > .input-search {
+  width: 270px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+.autocomplete-dropdown {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background color */
+  border-radius: 16px;
+  backdrop-filter: blur(
+    10px
+  ); /* Apply a blur effect to create the glassmorphism */
+  border: 1px solid rgba(255, 255, 255, 0.74);
+  font-weight: 700;
+  color: #fff;
+}
+
+.autocomplete-option {
+  padding: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+}
+@media screen and (max-width: 768px) {
+  .input-search {
+    height: 26px;
+    width: 220px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all 0.5s ease-in-out;
+    background-color: #030303fd;
+    padding-right: 40px;
+    color: #fff;
+  }
+  .logo {
+    margin-left: -100px;
+    height: 60px;
+    border-radius: 16px;
+  }
+  .search-box:hover > .input-search {
+    width: 220px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+  }
+  .autocomplete-dropdown {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    max-height: 200px;
+    overflow-y: hidden;
+    background: rgba(
+      255,
+      255,
+      255,
+      0.5
+    ); /* Semi-transparent background color */
+    border-radius: 16px;
+    backdrop-filter: blur(
+      5px
+    ); /* Apply a blur effect to create the glassmorphism */
+    border: 1px solid rgba(255, 255, 255, 0.74);
+    font-weight: 700;
+    color: black;
+    z-index: 99;
+  }
+}

@@ -1,0 +1,116 @@
+body {
+  overflow-x: hidden;
+}
+.hero {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 1px 0 1px;
+  background-image: url("https://img.freepik.com/free-vector/restaurant-mural-wallpaper_23-2148706001.jpg?w=740&t=st=1691229544~exp=1691230144~hmac=43dd368aaff98d11904f91acbb31d13efab59f65d2a6dafa8b11b6ef10644984");
+}
+
+.slide-container {
+  width: 50%;
+  height: 93%;
+  padding-bottom: 12px;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background color */
+  border-radius: 20px;
+  backdrop-filter: blur(
+    2px
+  ); /* Apply a blur effect to create the glassmorphism */
+  border: 1px solid rgba(255, 255, 255, 0.74);
+}
+
+.slide-content {
+  margin-top: -3px;
+  margin-bottom: 200px;
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  height: 100%;
+}
+
+.card {
+  width: 350px;
+  backdrop-filter: blur(3px) saturate(10%);
+  -webkit-backdrop-filter: blur(2px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+
+.card-image {
+  position: relative;
+  height: 190px;
+  width: 70%;
+}
+.card-image .card-img {
+  height: 110%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.name {
+  font-family: "Poppins", sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+  color: #333;
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+}
+
+.button {
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #4070f4;
+  border-radius: 6px;
+  margin: 14px;
+}
+
+.button:hover {
+  background: #265df2;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .slide-container {
+    width: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .slide-content {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+    width: 250px;
+  }
+
+  .card-image {
+    height: 150px;
+  }
+}

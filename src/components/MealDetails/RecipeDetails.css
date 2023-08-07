@@ -1,0 +1,75 @@
+/* MealDetails.css */
+body {
+  background-image: url("https://img.freepik.com/free-photo/top-view-macaronis-as-spaghetti-others-garlic-pepper-tomato-black-pepper-salt-butter-around-note-pad-wood-with-copy-space_141793-12680.jpg?w=360&t=st=1691424361~exp=1691424961~hmac=6f7bbbd2de935ae435d17f83ee151c400169aac5677e7c10d21f4293ff21df36");
+}
+.meal-details {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.7); /* Semi-transparent background color */
+  border-radius: 20px;
+  backdrop-filter: blur(
+    2px
+  ); /* Apply a blur effect to create the glassmorphism */
+  border: 1px solid rgba(255, 255, 255, 0.74);
+}
+
+.meal-details h2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.meal-details img {
+  width: 90%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 16px;
+}
+
+.meal-details h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.logo {
+  margin-left: 6px;
+}
+
+.meal-details ul {
+  list-style: none;
+  padding: 3px;
+}
+
+.meal-details li {
+  margin-bottom: 5px;
+}
+
+.meal-details p {
+  margin-bottom: 20px;
+}
+
+.ingredients {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  .meal-details {
+    max-width: 70%;
+    padding: 10px;
+  }
+
+  .meal-details img {
+    max-height: 200px;
+  }
+
+  .meal-details h2 {
+    font-size: 20px;
+  }
+
+  .meal-details h3 {
+    font-size: 18px;
+  }
+}
